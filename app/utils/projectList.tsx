@@ -67,10 +67,38 @@ export const ProjectList: ProjectType[] = [
         ),
       },
       {
+        name: "GPT-api",
+        icon: (
+          <AntdSVG
+            color="#1d93ff"
+            size={16}
+          />
+        ),
+      },
+      {
+        name: "Prisma",
+        icon: (
+          <AntdSVG
+            color="#1d93ff"
+            size={16}
+          />
+        ),
+      },
+
+      {
         name: "Tailwind",
         icon: (
           <TailwindSVG
             color="#06B6D4"
+            size={16}
+          />
+        ),
+      },
+      {
+        name: "Neon / Postgresql",
+        icon: (
+          <AntdSVG
+            color="#1d93ff"
             size={16}
           />
         ),
@@ -109,16 +137,25 @@ export const ProjectList: ProjectType[] = [
         ),
       },
       {
-        name: "CSS Modules",
+        name: "Tailwind",
         icon: (
-          <CSSSVG
+          <TailwindSVG
             color="#1572B6"
             size={16}
           />
         ),
       },
       {
-        name: "Antd",
+        name: "Shadcn",
+        icon: (
+          <ShadcnSVG
+            color="#000000"
+            size={16}
+          />
+        ),
+      },
+      {
+        name: "GPT-api",
         icon: (
           <AntdSVG
             color="#1d93ff"
@@ -126,6 +163,7 @@ export const ProjectList: ProjectType[] = [
           />
         ),
       },
+      
     ],
     description:
       "Vinci-ai is an app that uses the openai-api to generate stunning images from text description",
