@@ -53,15 +53,15 @@ export const techonologyIconList: iconType[] = [
     ),
   },
 
-  {
-    name: "Quasar",
-    icon: (
-      <QuasarSVG
-        color={color}
-        size={35}
-      />
-    ),
-  },
+  // {
+  //   name: "Quasar",
+  //   icon: (
+  //     <QuasarSVG
+  //       color={color}
+  //       size={35}
+  //     />
+  //   ),
+  // },
   {
     name: "Tailwind",
     icon: (
@@ -71,24 +71,24 @@ export const techonologyIconList: iconType[] = [
       />
     ),
   },
-  {
-    name: "PrimeVue",
-    icon: (
-      <PrimeVueSVG
-        color={color}
-        size={35}
-      />
-    ),
-  },
-  {
-    name: "PrimeReact",
-    icon: (
-      <PrimeReactSVG
-        color={color}
-        size={35}
-      />
-    ),
-  },
+  // {
+  //   name: "PrimeVue",
+  //   icon: (
+  //     <PrimeVueSVG
+  //       color={color}
+  //       size={35}
+  //     />
+  //   ),
+  // },
+  // {
+  //   name: "PrimeReact",
+  //   icon: (
+  //     <PrimeReactSVG
+  //       color={color}
+  //       size={35}
+  //     />
+  //   ),
+  // },
   {
     name: "NextUI",
     icon: (
@@ -116,13 +116,13 @@ export const techonologyIconList: iconType[] = [
       />
     ),
   },
-  {
-    name: "MongoDB",
-    icon: (
-      <MongoDBSVG
-        color={color}
-        size={35}
-      />
-    ),
-  },
+  // {
+  //   name: "MongoDB",
+  //   icon: (
+  //     <MongoDBSVG
+  //       color={color}
+  //       size={35}
+  //     />
+  //   ),
+  // },
 ];
