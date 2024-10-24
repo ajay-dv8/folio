@@ -12,10 +12,20 @@ import {
   QuasarSVG,
   MongoDBSVG,
   ShadcnSVG,
+  NextSVG,
 } from "../components/ui/icons";
 
 let color: string = "#9ca3af";
 export const techonologyIconList: iconType[] = [
+  {
+    name: "Next.js",
+    icon: (
+      <NextSVG
+        color={color}
+        size={35}
+      />
+    ),
+  },
   {
     name: "JavaScript",
     icon: (

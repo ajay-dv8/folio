@@ -105,11 +105,84 @@ export const ProjectList: ProjectType[] = [
       },
     ],
     description:
-      "Project work for school, an online saas web application to help business owners communicate, act as a help desk personnel and keep keep customers engaged, can used for sales and advertising products and email marketing",
+      "A saas web application to help business owners communicate with their customers using AI, act as a help desk personnel and keep keep customers engaged, can be used for sales, advertising products and email marketing",
     imgUrl: "/videos/divesai.png",
     videoUrl: "/videos/divesvid.webm",
     githubUrl: "https://github.com/ajay-dv8/divesai",
     websiteUrl: "https://divesai.vercel.app/",
+  },
+
+
+  {
+    icon: <ShadcnLandingSVG />,
+    title: "Portfolio",
+    subtitle: "Portfolio website",
+    technologies: [
+      {
+        name: "React",
+        icon: (
+          <ReactSVG
+            color="#61DAFB"
+            size={16}
+          />
+        ),
+      },
+
+      {
+        name: "Next js",
+        icon: (
+          <NextSVG
+            color="#000"
+            size={16}
+          />
+        ),
+      },
+
+      {
+        name: "TypeScript",
+        icon: (
+          <TypescriptSVG
+            color="#3178C6"
+            size={16}
+          />
+        ),
+      },
+      
+      {
+        name: "Shadcn",
+        icon: (
+          <ShadcnSVG
+            color="#000000"
+            size={16}
+          />
+        ),
+      },
+
+      {
+        name: "Tailwind",
+        icon: (
+          <TailwindSVG
+            color="#06B6D4"
+            size={16}
+          />
+        ),
+      },
+      {
+        name: "Threejs",
+        icon: (
+          <AntdSVG
+            color="#1d93ff"
+            size={16}
+          />
+        ),
+      },
+    ],
+    description:
+      "A simple 3D portfolio website, a single page portfolio with all relevant components.",
+    imgUrl: "/videos/folio.png",
+    videoUrl: "/videos/foliovid.webm",
+    githubUrl: "https://github.com/ajay-dv8/3d-portfolio",
+    websiteUrl: "https://ajayportfolio.vercel.app/",
   },
 
 
