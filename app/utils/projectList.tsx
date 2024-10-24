@@ -241,15 +241,7 @@ export const ProjectList: ProjectType[] = [
           />
         ),
       },
-      {
-        name: "Swagger",
-        icon: (
-          <SwaggerSVG
-            color="#85EA2D"
-            size={16}
-          />
-        ),
-      },
+      
     ],
     description:
       "A project that allows users to search categories and services to easly find and reach the services they are looking for .",
