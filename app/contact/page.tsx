@@ -39,11 +39,11 @@ export default function Contact() {
           </CardBody>
         </Card>
 
-        <Card
+        {/* <Card
           isHoverable
           className="col-span-full lg:row-start-2 lg:row-span-1 lg:col-span-1 cursor-pointer opacity-0 mobile-animation linkedInCard"
-        >
-          <Link
+        > */}
+          {/* <Link
             href={linkedIn}
             rel="noopener noreferrer"
             target="_blank"
@@ -53,11 +53,11 @@ export default function Contact() {
               className="flex justify-center items-center"
               onClick={() => window.open(`${linkedIn}`, "_blank")}
             >
-              {/* <XSVG /> */}
+              
               <LinkedInSVG />
             </CardBody>
-          </Link>
-        </Card>
+          </Link> */}
+        {/* </Card> */}
 
         <Card
           isHoverable

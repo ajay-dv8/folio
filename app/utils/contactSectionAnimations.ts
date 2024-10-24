@@ -65,10 +65,10 @@ export const mobileAnimation = () => {
   });
 };
 
-// export default {
-//   emailAnimation,
-//   githubAnimation,
-//   linkedInAnimation,
-//   formAnimation,
-//   mobileAnimation,
-// };
+export default {
+  emailAnimation,
+  githubAnimation,
+  linkedInAnimation,
+  formAnimation,
+  mobileAnimation,
+};
