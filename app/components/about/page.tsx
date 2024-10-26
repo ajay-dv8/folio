@@ -9,7 +9,7 @@ import { Tooltip } from "@nextui-org/tooltip";
 
 import { Education } from "../Education";
 import { iconType, educationType } from "@/app/types";
-import { educationList, techonologyIconList, whoAmIData } from "@/app/utils";
+import { educationList, technologyIconList, whoAmIData } from "@/app/utils";
 import aboutAnimation from "../../utils/aboutSectionAnimations";
 import IconComponent from "../ui/IconComponent";
 
@@ -23,7 +23,7 @@ export default function About() {
       aboutAnimation.whoAmIAnimation();
       aboutAnimation.professionAnimation();
       aboutAnimation.quoteAnimation();
-      aboutAnimation.techonologyIconListAnimation();
+      aboutAnimation.technologyIconListAnimation();
       aboutAnimation.verticalImageAnimation();
       aboutAnimation.educationContentAnimation();
     } else {
@@ -76,7 +76,7 @@ export default function About() {
           </h2>
 
           <div className="flex flex-wrap justify-center lg:justify-center gap-x-10 gap-y-6">
-            {techonologyIconList.map(({ name, icon }: iconType) => (
+            {technologyIconList.map(({ name, icon }: iconType) => (
               <Tooltip
                 key={`technology-item-${name}`}
                 content={name}

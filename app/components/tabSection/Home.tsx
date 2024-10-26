@@ -9,8 +9,8 @@ import { Tooltip } from "@nextui-org/tooltip";
 
 import { Education } from "../Education";
 import { iconType, educationType } from "@/app/types";
-import { educationList, techonologyIconList, whoAmIData } from "@/app/utils";
-import aboutAnimation from "../../utils/aboutSectionAnimations";
+import { educationList, technologyIconList, whoAmIData } from "@/app/utils";
+import aboutAnimation from "../../utils/aboutSectionAnimations"; 
 
 // eslint-disable-next-line react/display-name
 const IconComponent = forwardRef<HTMLDivElement, { icon: any }>(
@@ -37,7 +37,7 @@ export const Home = () => {
       aboutAnimation.whoAmIAnimation();
       aboutAnimation.professionAnimation();
       aboutAnimation.quoteAnimation();
-      aboutAnimation.techonologyIconListAnimation();
+      aboutAnimation.technologyIconListAnimation();
       aboutAnimation.verticalImageAnimation();
       aboutAnimation.educationContentAnimation();
     } else {
@@ -50,8 +50,8 @@ export const Home = () => {
       <Card className="col-span-full lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-1">
         <CardBody className="flex-col items-center justify-center gap-2">
           <Avatar
-            name="LM"
-            src="https://res.cloudinary.com/dbzv9xfjp/image/upload/v1700603685/portfolio/avatar-profile_lb9hd9.jpg"
+            name="AJ"
+            src="videos/profile.jpg"
             className="w-24 h-24 text-large brightness-90"
           />
           <h1 className="text-4xl font-bold">{fullName}</h1>
@@ -90,7 +90,7 @@ export const Home = () => {
           </h2>
 
           <div className="flex flex-wrap justify-center lg:justify-center gap-x-10 gap-y-6">
-            {techonologyIconList.map(({ name, icon }: iconType) => (
+            {technologyIconList.map(({ name, icon }: iconType) => (
               <Tooltip
                 key={`technology-item-${name}`}
                 content={name}

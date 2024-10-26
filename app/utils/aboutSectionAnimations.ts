@@ -45,7 +45,7 @@ const educationContentAnimation = () => {
   });
 };
 
-const techonologyIconListAnimation = () => {
+const technologyIconListAnimation = () => {
   const technologyIconList = document.querySelectorAll(".technologyIconList");
 
   inView(technologyIconList, () => {
@@ -100,7 +100,7 @@ export default {
   whoAmIAnimation,
   professionAnimation,
   quoteAnimation,
-  techonologyIconListAnimation,
+  technologyIconListAnimation,
   verticalImageAnimation,
   educationContentAnimation,
   mobileAnimation,

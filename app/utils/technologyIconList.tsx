@@ -16,7 +16,7 @@ import {
 } from "../components/ui/icons";
 
 let color: string = "#9ca3af";
-export const techonologyIconList: iconType[] = [
+export const technologyIconList: iconType[] = [
   {
     name: "Next.js",
     icon: (

@@ -85,9 +85,9 @@ export const Form = () => {
       className="flex flex-col gap-4"
       onSubmit={(e) => handleSubmit(e)}
     >
-      <h2 className="text-3xl font-bold">Contact with me</h2>
+      <h2 className="text-3xl font-bold">Contact me</h2>
       <p className="text-lg text-gray-400">
-        You can also get in touch with me through this form below.
+        You can also get in touch with me through the form below.
       </p>
       <Input
         id="name"
@@ -99,6 +99,7 @@ export const Form = () => {
         onChange={(e) => setName(e.target.value)}
         errorMessage={isInvalidName && "Please enter your name"}
       />
+
       <Input
         type="email"
         name="email"
@@ -110,6 +111,7 @@ export const Form = () => {
         onChange={(e) => setEmail(e.target.value)}
         errorMessage={isInvalidEmail && "Please enter a valid email"}
       />
+
       <Textarea
         id="message"
         type="text"
@@ -121,6 +123,7 @@ export const Form = () => {
         onChange={(e) => setMessage(e.target.value)}
         errorMessage={isInvalidMessage && "Please enter your message"}
       />
+
       <Button type="submit">Send Message</Button>
 
       <Toaster theme="dark" />
