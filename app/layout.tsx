@@ -5,6 +5,7 @@ import Providers from "./providers";
 import { NavbarSection } from "./components/ui/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 import "./globals.css";
+import ChatbotIframe from "./utils/bot";
 
 export const metadata: Metadata = {
   title: "Ajay Dives",
@@ -22,6 +23,7 @@ export default function RootLayout({
         <main className="dark text-foreground bg-background min-h-screen">
           <NavbarSection />
           <Providers>{children}</Providers>
+          {/* <ChatbotIframe /> */}
           <Analytics />
         </main>
       </body>

@@ -40,7 +40,7 @@ export default function About() {
             src="videos/profile.jpg"
             className="w-24 h-24 text-large brightness-90"
           />
-          <h1 className="text-4xl font-bold">{fullName}</h1>
+          <h1 className="text-4xl font-bold text-center">{fullName}</h1>
 
           {/* <Button>Download CV</Button> */}
         </CardBody>
