@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 
 import { Avatar } from "@nextui-org/avatar";
-// import { Button } from "@nextui-org/button";
+import { Button } from "@nextui-org/button";
 import { Card, CardBody } from "@nextui-org/card";
 import { Tooltip } from "@nextui-org/tooltip";
 
@@ -31,6 +31,16 @@ export default function About() {
     }
   }, []);
 
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = '/cv.pdf'; // Path to your PDF file in the public folder
+    link.download = 'Ajay_CV.pdf'; // The downloaded file's name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="grid grid-rows-8 grid-cols-4 lg:grid-cols-3 gap-5">
       <Card className="col-span-full lg:row-start-2 lg:row-span-2 lg:col-start-2 lg:col-span-1">
@@ -42,7 +52,7 @@ export default function About() {
           />
           <h1 className="text-4xl font-bold text-center">{fullName}</h1>
 
-          {/* <Button>Download CV</Button> */}
+          <Button onClick={handleDownload}>Download CV</Button>
         </CardBody>
       </Card>
 
