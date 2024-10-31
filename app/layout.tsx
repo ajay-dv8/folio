@@ -23,7 +23,9 @@ export default function RootLayout({
         <main className="dark text-foreground bg-background min-h-screen">
           <NavbarSection />
           <Providers>{children}</Providers>
-          {/* <ChatbotIframe /> */}
+          <div className="hidden lg:block">
+            <ChatbotIframe />
+          </div>
           <Analytics />
         </main>
       </body>

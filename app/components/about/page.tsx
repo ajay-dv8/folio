@@ -1,11 +1,12 @@
 "use client";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 import { Avatar } from "@nextui-org/avatar";
 import { Button } from "@nextui-org/button";
 import { Card, CardBody } from "@nextui-org/card";
 import { Tooltip } from "@nextui-org/tooltip";
+// import { Radio, RadioGroup } from "@nextui-org/radio";
 
 import { Education } from "../Education";
 import { iconType, educationType } from "@/app/types";
@@ -13,7 +14,7 @@ import { educationList, technologyIconList, whoAmIData } from "@/app/utils";
 import aboutAnimation from "../../utils/aboutSectionAnimations";
 import IconComponent from "../ui/IconComponent";
 
-const { fullName, profession, whoAmI, quote } = whoAmIData;
+const { fullName,alias, profession, whoAmI, quote } = whoAmIData;
 
 export default function About() {
   useEffect(() => {
@@ -30,6 +31,14 @@ export default function About() {
       aboutAnimation.mobileAnimation();
     }
   }, []);
+
+
+  // const [selectedName, setSelectedName] = useState("alias");
+
+  // const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   setSelectedName(event.target.value);
+  // };
+
 
 
   const handleDownload = () => {
@@ -50,7 +59,17 @@ export default function About() {
             src="videos/profile.jpg"
             className="w-24 h-24 text-large brightness-90"
           />
-          <h1 className="text-4xl font-bold text-center">{fullName}</h1>
+          <h1 className="text-4xl font-bold text-center">{alias}</h1> 
+          <h1 className="text-xl font-semibold opacity-50 text-center">{fullName}</h1> 
+
+          {/* <RadioGroup
+            label="Name"
+            color="secondary"
+            defaultValue={alias}
+          >
+            <Radio value={fullName}>Legal</Radio>
+            <Radio value={alias}>Alias</Radio> 
+          </RadioGroup> */}
 
           <Button onClick={handleDownload}>Download CV</Button>
         </CardBody>
