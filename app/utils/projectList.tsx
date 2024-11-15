@@ -2,26 +2,81 @@ import {
   AntdSVG,
   CSSSVG,
   ExpressSVG,
-  JavascriptSVG,
-  MagentaKitchenSVG,
+  JavascriptSVG, 
   MongoDBSVG,
-  MongooseSVG,
-  PrimeReactSVG,
+  MongooseSVG, 
   ReactHookFormSVG,
   ReactSVG,
   SassSVG,
   ShadcnLandingSVG,
   ShadcnSVG,
-  ShopApiSVG,
-  Sk8terSVG,
-  SwaggerSVG,
+  ShopApiSVG, 
   TailwindSVG,
   TypescriptSVG,
 } from "../components/ui/icons";
 import { ProjectType } from "../types";
 import { NextSVG } from "../components/ui/icons/index";
 
-export const ProjectList: ProjectType[] = [
+export const ProjectList: ProjectType[] = [ 
+{
+  icon: <ShopApiSVG />,
+  title: "Symliq",
+  subtitle: "Software Development Agency",
+  technologies: [
+    {
+      name: "Next js",
+      icon: (
+        <NextSVG
+          color="#000"
+          size={16}
+        />
+      ),
+    },
+    {
+      name: "React",
+      icon: (
+        <ReactSVG
+          color="#61DAFB"
+          size={16}
+        />
+      ),
+    },
+      {
+        name: "TypeScript",
+        icon: (
+          <TypescriptSVG
+            color="#3178C6"
+            size={16}
+          />
+        ),
+      },
+      {
+        name: "Frame Motion",
+        icon: (
+          <ExpressSVG
+            color="#000000"
+            size={16}
+          />
+        ),
+      },
+      {
+        name: "Tailwind",
+        icon: (
+          <TailwindSVG
+            color="#1572B6"
+            size={16}
+          />
+        ),
+      }, 
+    ],
+    description:
+      "Symliq is a software development agency that provides most software development services for mobile, web enterprise and eCommerce softwares. ",
+    imgUrl: "/videos/symliq.png",
+    videoUrl: "/videos/symliq.webm",
+    githubUrl: "https://github.com/ajay-dv8/symliq-main",
+    websiteUrl: "https://symliq-main.vercel.app/",
+  },
+  
   {
     icon: <ShadcnLandingSVG />,
     title: "Dives AI",
@@ -323,4 +378,5 @@ export const ProjectList: ProjectType[] = [
     githubUrl: "https://github.com/p-group50/care-crew",
     websiteUrl: "https://care-crew.vercel.app/",
   },
+  
 ];

@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-import Providers from "./providers";
 import { NavbarSection } from "./components/ui/Navbar";
-const inter = Inter({ subsets: ["latin"] });
-import "./globals.css";
+
 import ChatbotIframe from "./utils/bot";
+import Providers from "./providers";
+
+import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ajay Dives",
@@ -23,8 +26,8 @@ export default function RootLayout({
         <main className="dark text-foreground bg-background min-h-screen">
           <NavbarSection />
           <Providers>{children}</Providers>
-          <div className="hidden lg:block">
-            <ChatbotIframe />
+          <div className="hidden md:block">
+            {/* <ChatbotIframe /> */}
           </div>
           <Analytics />
         </main>
