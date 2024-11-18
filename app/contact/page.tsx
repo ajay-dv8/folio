@@ -7,11 +7,11 @@ import { Card, CardBody } from "@nextui-org/card";
 
 import { contactData } from "@/app/utils";
 import { Form } from "../components/Form";
-import { MailSVG, GithubSVG, XSVG, LinkedInSVG } from "../components/ui/icons/";
-import contactAnimation from "../utils/contactSectionAnimations";
+import { MailSVG, GithubSVG, XSVG, LinkedInSVG, Phone } from "../components/ui/icons/";
+import contactAnimation from "../utils/contactSectionAnimations"; 
 
 export default function Contact() {
-  const { email, github, x, linkedIn } = contactData;
+  const { email, github, x, linkedIn, phone } = contactData;
 
   useEffect(() => {
     const mq = window.matchMedia("(min-width: 1024px)");
@@ -39,25 +39,26 @@ export default function Contact() {
           </CardBody>
         </Card>
 
-        {/* <Card
+        <Card
           isHoverable
           className="col-span-full lg:row-start-2 lg:row-span-1 lg:col-span-1 cursor-pointer opacity-0 mobile-animation linkedInCard"
-        > */}
-          {/* <Link
-            href={linkedIn}
-            rel="noopener noreferrer"
-            target="_blank"
+        >
+          <Link
+            href={`tel:${phone}`} 
             className="min-h-full flex justify-center items-center"
           >
-            <CardBody
-              className="flex justify-center items-center"
-              onClick={() => window.open(`${linkedIn}`, "_blank")}
-            >
-              
-              <LinkedInSVG />
+            <CardBody className="flex justify-center items-center pag-x-4" >
+              <Button 
+                onClick={() => location.href=`tel:${phone}` 
+                }
+                startContent={<Phone/>}
+              >
+                +233 50 647 0919 
+              </Button>
+              {/* <LinkedInSVG /> */}
             </CardBody>
-          </Link> */}
-        {/* </Card> */}
+          </Link>
+        </Card>
 
         <Card
           isHoverable
@@ -86,3 +87,8 @@ export default function Contact() {
     </section>
   );
 }
+
+
+
+
+// LINKED IN CARD

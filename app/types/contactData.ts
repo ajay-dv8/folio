@@ -3,4 +3,5 @@ export type contactDataType = {
   github: string;
   linkedIn: string;
   x: string;
+  phone: string | any;
 };
