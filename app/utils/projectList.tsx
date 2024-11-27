@@ -18,6 +18,75 @@ import { ProjectType } from "../types";
 import { NextSVG } from "../components/ui/icons/index";
 
 export const ProjectList: ProjectType[] = [ 
+  {
+    icon: <ShopApiSVG />,
+    title: "Aniverse",
+    subtitle: "Anime website landingpage",
+    technologies: [
+      {
+        name: "Vite",
+        icon: (
+          <NextSVG
+            color="#000"
+            size={16}
+          />
+        ),
+      },
+      {
+        name: "React",
+        icon: (
+          <ReactSVG
+            color="#61DAFB"
+            size={16}
+          />
+        ),
+      },
+        {
+          name: "TypeScript",
+          icon: (
+            <TypescriptSVG
+              color="#3178C6"
+              size={16}
+            />
+          ),
+        },
+        {
+          name: "Gsap",
+          icon: (
+            <ExpressSVG
+              color="#000000"
+              size={16}
+            />
+          ),
+        },
+        {
+          name: "CSS",
+          icon: (
+            <CSSSVG
+              color="#1572B6"
+              size={16}
+            />
+          ),
+        }, 
+        {
+          name: "Tailwind",
+          icon: (
+            <TailwindSVG
+              color="#1572B6"
+              size={16}
+            />
+          ),
+        }, 
+      ],
+      description:
+        "An amazing animated landing page for an anime website, animated with gsap and to provide smooth and interactive transitions",
+      imgUrl: "/videos/aniverse.png",
+      videoUrl: "/videos/aniverseVid.webm",
+      githubUrl: "https://github.com/ajay-dv8/aniverse",
+      websiteUrl: "https://aniverse1.vercel.app/",
+    },
+
+
 {
   icon: <ShopApiSVG />,
   title: "Symliq",
