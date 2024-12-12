@@ -7,6 +7,7 @@ import ChatbotIframe from "./utils/bot";
 import Providers from "./providers";
 
 import "./globals.css";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,10 +19,13 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode ;
 }) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="google-adsense-account" content="ca-pub-8136692572862471" />
+      </Head>
       <body className={inter.className}>
         <main className="dark text-foreground bg-background min-h-screen">
           <NavbarSection />
