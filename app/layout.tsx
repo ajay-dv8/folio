@@ -8,12 +8,16 @@ import Providers from "./providers";
 
 import "./globals.css";
 import Head from "next/head";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Ajay Dives",
   description: "Ajay Dives | Web developer portfolio",
+  other: {
+    "google-adsense-account": "ca-pub-8136692572862471"
+  }
 };
 
 export default function RootLayout({
@@ -22,10 +26,7 @@ export default function RootLayout({
   children: React.ReactNode ;
 }) {
   return (
-    <html lang="en">
-      <Head>
-        <meta name="google-adsense-account" content="ca-pub-8136692572862471" />
-      </Head>
+    <html lang="en"> 
       <body className={inter.className}>
         <main className="dark text-foreground bg-background min-h-screen">
           <NavbarSection />
