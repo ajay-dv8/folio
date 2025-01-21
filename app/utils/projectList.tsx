@@ -20,6 +20,75 @@ import { NextSVG } from "../components/ui/icons/index";
 export const ProjectList: ProjectType[] = [ 
   {
     icon: <ShopApiSVG />,
+    title: "Symliq Developers (Redesigned)",
+    subtitle: "Software Development Agency",
+    technologies: [
+      {
+        name: "Next js",
+        icon: (
+          <NextSVG
+            color="#000"
+            size={16}
+          />
+        ),
+      },
+      {
+        name: "React",
+        icon: (
+          <ReactSVG
+            color="#61DAFB"
+            size={16}
+          />
+        ),
+      },
+        {
+          name: "TypeScript",
+          icon: (
+            <TypescriptSVG
+              color="#3178C6"
+              size={16}
+            />
+          ),
+        },
+        {
+          name: "Frame Motion",
+          icon: (
+            <ExpressSVG
+              color="#000000"
+              size={16}
+            />
+          ),
+        },
+        {
+          name: "G-Sap",
+          icon: (
+            <ExpressSVG
+              color="#000000"
+              size={16}
+            />
+          ),
+        },
+        {
+          name: "TailwindCSS",
+          icon: (
+            <TailwindSVG
+              color="#1572B6"
+              size={16}
+            />
+          ),
+        }, 
+      ],
+      description:
+        "Redesigned Symliq developers website to give itt a more modern and simple feel with easy and smooth navigation. ",
+      imgUrl: "/videos/symliqrd.webp",
+      videoUrl: "/videos/symliqrd.webm",
+      githubUrl: "https://github.com/ajay-dv8/syml ",
+      websiteUrl: "https://symliq.vercel.app/",
+    },
+
+
+  {
+    icon: <ShopApiSVG />,
     title: "Aniverse",
     subtitle: "Anime website landingpage",
     technologies: [
