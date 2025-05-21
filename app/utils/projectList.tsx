@@ -83,7 +83,7 @@ export const ProjectList: ProjectType[] = [
       imgUrl: "/videos/symliqrd.webp",
       videoUrl: "/videos/symliqrd.webm",
       githubUrl: "https://github.com/ajay-dv8/syml ",
-      websiteUrl: "https://symliq.vercel.app/",
+      websiteUrl: "https://symliq.com",
     },
 
 

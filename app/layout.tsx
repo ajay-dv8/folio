@@ -6,9 +6,7 @@ import { NavbarSection } from "./components/ui/Navbar";
 import ChatbotIframe from "./utils/bot";
 import Providers from "./providers";
 
-import "./globals.css";
-import Head from "next/head";
-import Script from "next/script";
+import "./globals.css"; 
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,7 +30,7 @@ export default function RootLayout({
           <NavbarSection />
           <Providers>{children}</Providers>
           <div className="hidden md:block">
-            {/* <ChatbotIframe /> */}
+            <ChatbotIframe />
           </div>
           <Analytics />
         </main>
