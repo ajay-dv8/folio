@@ -14,8 +14,8 @@ const ChatbotIframe = () => {
     iframeStyles(`
       .chat-frame {
         position: fixed;
-        bottom: 50px;
-        right: 50px;
+        bottom: 30px;
+        right: 30px;
         border: none;
       }
     `);
