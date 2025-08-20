@@ -88,7 +88,7 @@ export const ProjectList: ProjectType[] = [
         }, 
       ],
       description:
-        "Redesigned Symliq developers website to give itt a more modern and simple feel with easy and smooth navigation. ",
+        "Developed a modern, responsive website for Infinit Tech Solutions. The website showcases their services, portfolio, and contact information, providing a professional online presence.",
       imgUrl: "/videos/symliqrd.webp",
       videoUrl: "/videos/infinit.webm",
       githubUrl: "https://github.com/ajay-dv8/syml ",
@@ -97,7 +97,7 @@ export const ProjectList: ProjectType[] = [
 
   {
     icon: <ShopApiSVG />,
-    title: "Symliq Developers (Redesigned)",
+    title: "Symliq Developers",
     subtitle: "Software Development Agency",
     technologies: [
       {
