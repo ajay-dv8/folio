@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { NavbarSection } from "./components/ui/Navbar";
 
-// import ChatbotIframe from "./utils/bot";
+import ChatbotIframe from "./utils/bot";
 import Providers from "./providers";
 
 import "./globals.css"; 
@@ -29,9 +29,9 @@ export default function RootLayout({
         <main className="dark text-foreground bg-background min-h-screen">
           <NavbarSection />
           <Providers>{children}</Providers>
-          {/* <div className="hidden md:block">
+           <div className="hidden md:block">
             <ChatbotIframe />
-          </div> */}
+          </div> 
           <Analytics />
         </main>
       </body>
